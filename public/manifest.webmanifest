@@ -2,7 +2,7 @@
   "name": "Postanu",
   "short_name": "Postanu",
   "background_color": "#000",
-  "theme_color": "#0A84FF",
+  "theme_color": "#000",
   "start_url": "/",
   "display": "standalone",
   "icons": [
