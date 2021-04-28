@@ -11,6 +11,7 @@ footer.footer
 	p
 		span.p-headline Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
 		br
+		br
 		span.p-headline Copyright © 2021 Postanu LLC
 </template>
 
