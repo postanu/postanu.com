@@ -262,7 +262,7 @@
 
 "@postanu/ui@postanu/ui":
   version "0.2.0"
-  resolved "https://codeload.github.com/postanu/ui/tar.gz/c8d4937096a90813df90d84c4ec9cd36a0ba06ad"
+  resolved "https://codeload.github.com/postanu/ui/tar.gz/1eabf093e77efe400d214abd3432bd54600042c3"
   dependencies:
     "@postanu/types" postanu/types
     vue "^3.0.11"
