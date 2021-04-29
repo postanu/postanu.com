@@ -9,10 +9,10 @@ footer.footer
 	.footer__rune
 		p-icon(icon="edaks")
 	p
-		span.p-headline Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
+		p-heading(tag="span" headline) Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
 		br
 		br
-		span.p-headline Copyright © 2021 Postanu LLC
+		p-heading(tag="span" headline) Copyright © 2021 Postanu LLC
 </template>
 
 <script lang="ts">
