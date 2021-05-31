@@ -35,6 +35,7 @@
     "stylus": "^0.54.8",
     "typescript": "^4.3.2",
     "vite": "^2.3.4",
-    "vite-ssg": "^0.11.2"
+    "vite-ssg": "^0.11.2",
+    "vue-router": "^4.0.8"
   }
 }

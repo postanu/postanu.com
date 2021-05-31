@@ -224,9 +224,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@logux/actions@logux/actions":
-  version "0.1.0"
-  resolved "https://codeload.github.com/logux/actions/tar.gz/957dc1bb2b1f04653866e70f531a21afaaaba31a"
+"@logux/actions@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@logux/actions/-/actions-0.2.0.tgz#ba09a8b6e73f7c303f1103000ae455ceb09c6c95"
+  integrity sha512-i1occXt0XcJXHI2wsq/soZiMGd+CpyeKfxnF0WCY0VfMJiYSObBl7v0jEXQuFgBVWcK1CR2b6DLkdVOYvWC45Q==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
@@ -405,6 +406,11 @@
   dependencies:
     "@vue/compiler-dom" "3.0.11"
     "@vue/shared" "3.0.11"
+
+"@vue/devtools-api@^6.0.0-beta.10":
+  version "6.0.0-beta.12"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.12.tgz#693ffc77bfb66b080e5c9576abb5786c85470a32"
+  integrity sha512-PtHmAxFmCyCElV7uTWMrXj+fefwn4lCfTtPo9fPw0SK8/7e3UaFl8IL7lnugJmNFfeKQyuTkSoGvTq1uDaRF6Q==
 
 "@vue/reactivity@3.0.11":
   version "3.0.11"
@@ -3361,6 +3367,13 @@ vue-eslint-parser@^7.6.0:
     espree "^6.2.1"
     esquery "^1.4.0"
     lodash "^4.17.15"
+
+vue-router@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.8.tgz#55d4290a3122444edbc91a3cd2492bb1d0cef494"
+  integrity sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.10"
 
 vue@^3.0.11:
   version "3.0.11"
