@@ -2,7 +2,7 @@
 .index-view
 	section.section
 		p-heading(tag="h1" hero) Sharing your opinion <br>and talking about your life <br>should be easy
-		app-line
+	hr.hr
 	section.section#ig
 		a.ig__link(
 			href="https://instagram.com/postanuapp"
@@ -24,13 +24,6 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
-.index-view
-	padding: 20px 20px 0px 20px
-	display: flex
-	text-align: center
-	flex-direction: column
-	justify-content: center
-
 .ig__muted
 	color: var(--p-color-white-04)
 
@@ -43,5 +36,4 @@ export default defineComponent({
 	.ig__muted
 		text-decoration: underline
 		text-underline-offset: 10px
-
 </style>

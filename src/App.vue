@@ -3,8 +3,8 @@ header.header
 	p-logo.header__logo
 	.header__coming Coming soon
 main
-	index-view
-app-line
+	router-view.view
+hr.hr
 footer.footer
 	.footer__rune
 		p-icon(icon="edaks")
@@ -27,6 +27,13 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
+.view
+	padding: 20px 20px 0px 20px
+	display: flex
+	text-align: center
+	flex-direction: column
+	justify-content: center
+
 .header
 	width: 100%
 	display: flex
