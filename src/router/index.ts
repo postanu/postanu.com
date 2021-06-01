@@ -1,6 +1,8 @@
-import { createWebHistory } from 'vue-router'
+import { createMemoryHistory, createWebHistory } from 'vue-router'
 
-export let history = createWebHistory()
+let isClient = typeof window !== 'undefined'
+
+export let history = isClient ? createWebHistory() : createMemoryHistory()
 
 export let routes = [
 	{
