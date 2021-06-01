@@ -1,6 +1,7 @@
 <template lang="pug">
 header.header
-	p-logo.header__logo
+	router-link(to="/")
+		p-logo.header__logo
 	.header__coming Coming soon
 main
 	router-view.view
