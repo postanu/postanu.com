@@ -255,15 +255,16 @@
   resolved "https://registry.yarnpkg.com/@postanu/eslint-config/-/eslint-config-3.1.1.tgz#5fcdc31307e3d462db896f285705a2ea1023b9e4"
   integrity sha512-KP5PUg8rbvFCUrTGtF8t2ZcnzY2JDl1j0siMFERzNNowB1+7/X99WiKs/KcH3xIdbSVBbED1dEkz2eerzfAaOw==
 
-"@postanu/types@postanu/types":
+"@postanu/types@github:postanu/types":
   version "1.0.0"
-  resolved "https://codeload.github.com/postanu/types/tar.gz/9ec5d1cba626ffc3961ad1605aae7f17cf0e7d13"
+  resolved "https://codeload.github.com/postanu/types/tar.gz/0a30eacb5a8d1002ea329e6a4ec8f5edfcbf2cf1"
   dependencies:
     "@logux/actions" "^0.2.0"
 
-"@postanu/ui@postanu/ui":
-  version "0.2.0"
-  resolved "https://codeload.github.com/postanu/ui/tar.gz/27dd591cda4922f35f2100323b41146d7bd73a5c"
+"@postanu/ui@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@postanu/ui/-/ui-0.2.1.tgz#66d61a957b421c6ef4dbde5f1b2a2c00d07aa228"
+  integrity sha512-rcPka7Rz7aj9g6/XT4c/QixvgwJlGgSogWQ6YaYZyQocEtxWpNMJxUaWhkTxIOrISPcK8OpYh8UNbVvIaqN09g==
   dependencies:
     "@postanu/types" postanu/types
     vue "^3.0.11"
