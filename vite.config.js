@@ -10,6 +10,11 @@ export default defineConfig({
 	},
 	ssgOptions: {
 		script: 'async defer',
-		formatting: 'minify'
+		formatting: 'minify',
+		includedRoutes: routes => {
+			routes.push('404')
+			// https://github.com/antfu/vite-ssg/blob/d14b50983a909f4b42d209c4b207a05ee4fefcd9/src/node/build.ts#L19
+			return routes.filter(i => !i.includes(':') && !i.includes('*'))
+		}
 	}
 })
