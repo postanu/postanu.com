@@ -261,10 +261,10 @@
   dependencies:
     "@logux/actions" "^0.2.0"
 
-"@postanu/ui@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@postanu/ui/-/ui-0.2.2.tgz#da8ab8b459fd4716d9be12899e9013d52eff83a8"
-  integrity sha512-Gz0PMWU+HJD41vc/KesunrI4IlIV7HzP8jH+la/ZgfLjJsqTzK7k+M4tTZ3xtLCifhETOXCX9YWg2uR4Zj52Kw==
+"@postanu/ui@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@postanu/ui/-/ui-0.3.0.tgz#808f580791e5ea3d3de56c1d1758d7f33bc1b728"
+  integrity sha512-4K59139M095tZBuxkzH1TJQQezRNYfuIYppuGkLBTaVjN49TyvH/wIB/VtWAn2/cBmTbsUc/BEjae2vxbcjN0g==
   dependencies:
     "@postanu/types" postanu/types
     vue "^3.0.11"
