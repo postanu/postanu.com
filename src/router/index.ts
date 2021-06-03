@@ -1,5 +1,7 @@
 import { createMemoryHistory, createWebHistory } from 'vue-router'
 
+type LazyComponent = Promise<typeof import('*.vue')>
+
 let isClient = typeof window !== 'undefined'
 
 export let history = isClient ? createWebHistory() : createMemoryHistory()
@@ -7,12 +9,17 @@ export let history = isClient ? createWebHistory() : createMemoryHistory()
 export let routes = [
 	{
 		path: '/',
-		component: (): Promise<typeof import('*.vue')> =>
+		component: (): LazyComponent =>
 			import('../views/IndexView.vue')
 	},
 	{
 		path: '/500',
-		component: (): Promise<typeof import('*.vue')> =>
+		component: (): LazyComponent =>
 			import('../views/Error500View.vue')
+	},
+	{
+		path: '/:pathMatch(.*)*',
+		component: (): LazyComponent =>
+			import('../views/Error404View.vue')
 	}
 ]
