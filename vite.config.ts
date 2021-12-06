@@ -5,9 +5,6 @@ export default defineConfig({
 	plugins: [
 		vue()
 	],
-	optimizeDeps: {
-		exclude: ['@postanu/ui']
-	},
 	ssgOptions: {
 		script: 'async defer',
 		formatting: 'minify',

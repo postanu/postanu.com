@@ -3,18 +3,19 @@
     "module": "esnext",
     "target": "esnext",
     "strict": true,
+    "noEmit": true,
+    "allowJs": true,
     "sourceMap": true,
+    "noImplicitAny": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "lib": ["esnext", "dom"],
     "types": ["vite/client"]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.vue"
+    "./env.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.vue",
+    "./vite.config.ts"
   ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
 }
