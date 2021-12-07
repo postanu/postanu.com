@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "serve": "vite preview",
-    "test": "stylelint './src/**/*.{vue,styl}' && size-limit"
+    "test": "stylelint './src/**/*.{vue,styl}' && eslint ./src && size-limit"
   },
   "dependencies": {
     "@postanu/stylelint-config": "^0.4.0",
