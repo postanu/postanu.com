@@ -1,0 +1,8 @@
+[
+  {
+    "path": [
+      "./dist/assets/*.js"
+    ],
+    "limit": "40 kB"
+  }
+]
