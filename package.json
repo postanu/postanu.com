@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "https://postanu.com/",
   "repository": "postanu/postanu.com",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build",
