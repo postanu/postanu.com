@@ -13,7 +13,9 @@
     "test": "size-limit"
   },
   "dependencies": {
+    "@postanu/stylelint-config": "^0.4.0",
     "@postanu/ui": "postanu/ui",
+    "stylelint": "^14.1.0",
     "vue": "^3.2.24"
   },
   "devDependencies": {
