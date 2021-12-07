@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "serve": "vite preview",
-    "test": "stylelint './src/**/*.{vue,styl}' && eslint ./src && size-limit"
+    "test": "vue-tsc --noEmit && stylelint './src/**/*.{vue,styl}' && eslint ./src && size-limit"
   },
   "dependencies": {
     "@postanu/stylelint-config": "^0.4.0",
@@ -45,6 +45,7 @@
     "typescript": "^4.5.2",
     "vite": "^2.6.14",
     "vite-ssg": "^0.16.2",
-    "vue-router": "^4.0.8"
+    "vue-router": "^4.0.8",
+    "vue-tsc": "^0.29.8"
   }
 }
