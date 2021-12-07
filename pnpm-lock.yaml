@@ -22,8 +22,10 @@ specifiers:
   eslint-plugin-security: ^1.4.0
   eslint-plugin-unicorn: ^39.0.0
   eslint-plugin-vue: ^8.2.0
+  nano-staged: ^0.4.5
   postcss: ^8.4.4
   pug: ^3.0.2
+  simple-git-hooks: ^2.7.0
   size-limit: ^7.0.4
   stylelint: ^14.1.0
   stylus: ^0.55.0
@@ -60,8 +62,10 @@ devDependencies:
   eslint-plugin-security: 1.4.0
   eslint-plugin-unicorn: 39.0.0_eslint@8.4.0
   eslint-plugin-vue: 8.2.0_eslint@8.4.0
+  nano-staged: 0.4.5
   postcss: 8.4.4
   pug: 3.0.2
+  simple-git-hooks: 2.7.0
   size-limit: 7.0.4
   stylus: 0.55.0
   typescript: 4.5.2
@@ -2805,6 +2809,14 @@ packages:
     resolution: {integrity: sha512-0ZIR9PasPxGXmRsEF8jsDzndzHDj7tIav+JUmvIFB/WHswliFnquxECT/De7GR4yg99ky/NlRKJT82G1y271bw==}
     dev: true
 
+  /nano-staged/0.4.5:
+    resolution: {integrity: sha512-XA039XLfYONp/houvY0z6T8T/Z41d8j1dmH9js7NpNnxdajwl0W/o2DRtTh6JB3pfPPbi0qDTeCWPaH5UTD+8Q==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    hasBin: true
+    dependencies:
+      picocolors: 1.0.0
+    dev: true
+
   /nanoid/3.1.30:
     resolution: {integrity: sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3491,6 +3503,12 @@ packages:
   /signal-exit/3.0.6:
     resolution: {integrity: sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==}
     dev: false
+
+  /simple-git-hooks/2.7.0:
+    resolution: {integrity: sha512-nQe6ASMO9zn5/htIrU37xEIHGr9E6wikXelLbOeTcfsX2O++DHaVug7RSQoq+kO7DvZTH37WA5gW49hN9HTDmQ==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /size-limit/7.0.4:
     resolution: {integrity: sha512-IkY30erk6psU6UCg/R0crNUIWIQsTTVv1/tMtY0ifOtq6Y2F2cUC3Z0zXNAmKcncnl9HJjUIQhw2WNYRlDiv0Q==}
