@@ -1,4 +1,5 @@
-html, body
+html,
+body
 	height: 100%
 	overflow: hidden
 
@@ -8,31 +9,33 @@ html, body
 	-webkit-overflow-scrolling: touch
 
 @media (max-width: 414px)
-	html, body, #app
+	html,
+	body,
+	#app
 		height: initial
 		overflow: initial
 
 .section
+	display: flex
+	flex-direction: column
+	gap: 50px
+	align-items: center
 	margin-top: 200px
 	margin-bottom: 50px
-	gap: 50px
-	display: flex
-	align-items: center
-	flex-direction: column
 
 hr
 	margin: 0
 	border: 0
 
 .hr
-	height: 35vh
 	position: relative
+	height: 35vh
 
 .hr:after
-	content: ""
+	position: absolute
 	left: 50%
 	height: 100%
-	position: absolute
+	content: ""
 	border-left: 1px solid var(--p-color-white-02)
 
 .p

@@ -29,32 +29,32 @@ export default defineComponent({
 
 <style lang="stylus">
 .view
-	padding: 20px 20px 0px 20px
 	display: flex
-	text-align: center
 	flex-direction: column
 	justify-content: center
+	padding: 20px 20px 0px 20px
+	text-align: center
 
 .header
-	width: 100%
-	display: flex
 	position: fixed
+	display: flex
 	justify-content: space-between
+	width: 100%
 
 .header__logo
-	padding: 20px
 	display: inline-block
+	padding: 20px
 
 .header__coming
 	padding: 20px
 	text-transform: lowercase
 
 .footer
-	margin: 200px 0
 	display: flex
-	text-align: center
 	flex-direction: column
 	justify-content: center
+	margin: 200px 0
+	text-align: center
 
 .footer__rune
 	margin-bottom: 50px
