@@ -2,7 +2,12 @@
 header.header
 	router-link(to="/")
 		p-logo.header__logo
-	.header__coming Coming soon
+	p-button(
+		v-if="auth"
+		icon="facebook"
+		@click="login"
+	) Log in via
+	.header__coming(v-else) Coming soon
 main
 	router-view.view
 hr.hr
@@ -17,7 +22,18 @@ footer.footer
 </template>
 
 <script lang="ts" setup>
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+
 import IndexView from './views/IndexView.vue'
+
+const route = useRoute()
+
+const auth = computed(() => route.query.$auth)
+
+function login (): void {
+	location.href = auth.value as string
+}
 </script>
 
 <style lang="stylus">
