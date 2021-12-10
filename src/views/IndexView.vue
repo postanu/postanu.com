@@ -15,14 +15,6 @@
 				span.ig__muted @postanuapp
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-	name: 'IndexView'
-})
-</script>
-
 <style lang="stylus">
 .ig__muted
 	color: var(--p-color-white-04)

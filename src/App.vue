@@ -16,15 +16,8 @@ footer.footer
 		p-heading(tag="span" headline) Copyright © 2021 Postanu LLC
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script lang="ts" setup>
 import IndexView from './views/IndexView.vue'
-
-export default defineComponent({
-	name: 'App',
-	components: { IndexView }
-})
 </script>
 
 <style lang="stylus">

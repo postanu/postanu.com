@@ -12,11 +12,3 @@
 			p-button(tag="a" href="/") Main page
 			p-button(tag="a" href="mailto:support@postanu.com") Write to support
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-	name: 'Error404View'
-})
-</script>

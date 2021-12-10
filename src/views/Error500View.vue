@@ -16,18 +16,12 @@
 				//- p-button Write to support
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from 'vue'
+<script lang="ts" setup>
 import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
-export default defineComponent({
-	name: 'Error500View',
-	setup () {
-		let route = useRoute()
-		return {
-			showCode: computed(() => route.query.code),
-			code: route.query.code
-		}
-	}
-})
+const route = useRoute()
+
+const showCode = computed(() => route.query.code)
+const code = route.query.code
 </script>
