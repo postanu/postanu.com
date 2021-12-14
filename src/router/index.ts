@@ -18,11 +18,6 @@ export let routes = [
 			import('../views/Error500View.vue')
 	},
 	{
-		path: '/close',
-		component: (): LazyComponent =>
-			import('../views/ClosedTabView.vue')
-	},
-	{
 		path: '/:pathMatch(.*)*',
 		component: (): LazyComponent =>
 			import('../views/Error404View.vue')
