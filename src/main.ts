@@ -1,11 +1,13 @@
-import '@postanu/ui/styles/base.styl'
+import '@postanu/ui/style'
 import './styles/base.styl'
 import './styles/ui.styl'
 
-import PHeading from '@postanu/ui/components/p-heading/PHeading.vue'
-import PButton from '@postanu/ui/components/p-button/PButton.vue'
-import PIcon from '@postanu/ui/components/p-icon/PIcon.vue'
-import PLogo from '@postanu/ui/components/p-logo/PLogo.vue'
+import {
+	PHeading,
+	PButton,
+	PIcon,
+	PLogo
+} from '@postanu/ui'
 import { ViteSSG } from 'vite-ssg'
 
 import { routes, history } from './router'

@@ -4,7 +4,7 @@ specifiers:
   '@postanu/core': ^0.1.1
   '@postanu/eslint-config': ^3.5.0
   '@postanu/stylelint-config': ^0.4.0
-  '@postanu/ui': postanu/ui
+  '@postanu/ui': ^0.8.0
   '@size-limit/preset-app': ^7.0.4
   '@typescript-eslint/eslint-plugin': ^5.6.0
   '@typescript-eslint/parser': ^5.6.0
@@ -37,7 +37,7 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
-  '@postanu/ui': github.com/postanu/ui/97e197e93c4208694b94ffc3c7083f30141e5601_@postanu+core@0.1.1+vue@3.2.24
+  '@postanu/ui': 0.8.0_@postanu+core@0.1.1+vue@3.2.24
   vue: 3.2.24
 
 devDependencies:
@@ -419,6 +419,32 @@ packages:
       - postcss-syntax
       - supports-color
     dev: true
+
+  /@postanu/ui/0.8.0_@postanu+core@0.1.1+vue@3.2.24:
+    resolution: {integrity: sha512-oklbXTtzKVdKSkoUzvRzfm23Q8Kz6zBvqgctykVzZBWLArbCufiQC6Vz8iIFHFHYfHqEY/oCR+s15QVVzZfCqQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@postanu/core': ^0.1.1
+      '@postanu/twitter-text': ^0.2.0
+      date-fns: ^2.27.0
+      hashtag-regex: ^2.1.0
+      vue: ^3.2.23
+      vuedraggable: ^4.1.0
+    peerDependenciesMeta:
+      '@postanu/core':
+        optional: true
+      '@postanu/twitter-text':
+        optional: true
+      date-fns:
+        optional: true
+      hashtag-regex:
+        optional: true
+      vuedraggable:
+        optional: true
+    dependencies:
+      '@postanu/core': 0.1.1
+      vue: 3.2.24
+    dev: false
 
   /@sitespeed.io/tracium/0.3.3:
     resolution: {integrity: sha512-dNZafjM93Y+F+sfwTO5gTpsGXlnc/0Q+c2+62ViqP3gkMWvHEMSKkaEHgVJLcLg3i/g19GSIPziiKpgyne07Bw==}
@@ -4549,32 +4575,3 @@ packages:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
     dev: true
-
-  github.com/postanu/ui/97e197e93c4208694b94ffc3c7083f30141e5601_@postanu+core@0.1.1+vue@3.2.24:
-    resolution: {tarball: https://codeload.github.com/postanu/ui/tar.gz/97e197e93c4208694b94ffc3c7083f30141e5601}
-    id: github.com/postanu/ui/97e197e93c4208694b94ffc3c7083f30141e5601
-    name: '@postanu/ui'
-    version: 0.7.2
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      '@postanu/core': ^0.1.1
-      '@postanu/twitter-text': ^0.2.0
-      date-fns: ^2.27.0
-      hashtag-regex: ^2.1.0
-      vue: ^3.2.23
-      vuedraggable: ^4.1.0
-    peerDependenciesMeta:
-      '@postanu/core':
-        optional: true
-      '@postanu/twitter-text':
-        optional: true
-      date-fns:
-        optional: true
-      hashtag-regex:
-        optional: true
-      vuedraggable:
-        optional: true
-    dependencies:
-      '@postanu/core': 0.1.1
-      vue: 3.2.24
-    dev: false
