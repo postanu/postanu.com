@@ -4,7 +4,7 @@ specifiers:
   '@postanu/core': ^0.1.1
   '@postanu/eslint-config': ^3.5.0
   '@postanu/stylelint-config': ^0.4.0
-  '@postanu/ui': ^0.8.0
+  '@postanu/ui': ^0.8.1
   '@size-limit/preset-app': ^7.0.4
   '@typescript-eslint/eslint-plugin': ^5.6.0
   '@typescript-eslint/parser': ^5.6.0
@@ -37,7 +37,7 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
-  '@postanu/ui': 0.8.0_@postanu+core@0.1.1+vue@3.2.24
+  '@postanu/ui': 0.8.1_@postanu+core@0.1.1+vue@3.2.24
   vue: 3.2.24
 
 devDependencies:
@@ -420,12 +420,13 @@ packages:
       - supports-color
     dev: true
 
-  /@postanu/ui/0.8.0_@postanu+core@0.1.1+vue@3.2.24:
-    resolution: {integrity: sha512-oklbXTtzKVdKSkoUzvRzfm23Q8Kz6zBvqgctykVzZBWLArbCufiQC6Vz8iIFHFHYfHqEY/oCR+s15QVVzZfCqQ==}
+  /@postanu/ui/0.8.1_@postanu+core@0.1.1+vue@3.2.24:
+    resolution: {integrity: sha512-o77+3IufVzZA0ALokxK36TVHSsvYt4ZHPI7nmieqgEF1mqtOC+9xQcjT5M0LjXZ+f1j/Tb6EwiT+IH2NiYCgsg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@postanu/core': ^0.1.1
       '@postanu/twitter-text': ^0.2.0
+      '@postanu/types': ^0.3.0
       date-fns: ^2.27.0
       hashtag-regex: ^2.1.0
       vue: ^3.2.23
@@ -434,6 +435,8 @@ packages:
       '@postanu/core':
         optional: true
       '@postanu/twitter-text':
+        optional: true
+      '@postanu/types':
         optional: true
       date-fns:
         optional: true
