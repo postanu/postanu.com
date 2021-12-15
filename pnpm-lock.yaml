@@ -4,6 +4,7 @@ specifiers:
   '@postanu/core': ^0.1.1
   '@postanu/eslint-config': ^3.5.0
   '@postanu/stylelint-config': ^0.4.0
+  '@postanu/types': ^0.3.1
   '@postanu/ui': ^0.8.1
   '@size-limit/preset-app': ^7.0.4
   '@typescript-eslint/eslint-plugin': ^5.6.0
@@ -37,13 +38,14 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
-  '@postanu/ui': 0.8.1_@postanu+core@0.1.1+vue@3.2.24
+  '@postanu/ui': 0.8.1_800f6f85cded1d607fda5a004bc4f3b8
   vue: 3.2.24
 
 devDependencies:
   '@postanu/core': 0.1.1
   '@postanu/eslint-config': 3.5.0_014a21cee3c096586c60f292cdd84e2b
   '@postanu/stylelint-config': 0.4.0_stylelint@14.1.0
+  '@postanu/types': 0.3.1_vue@3.2.24
   '@size-limit/preset-app': 7.0.4_size-limit@7.0.4
   '@typescript-eslint/eslint-plugin': 5.6.0_c73ee81e7e5a72fe329c49340cf4792a
   '@typescript-eslint/parser': 5.6.0_eslint@8.4.0+typescript@4.5.2
@@ -420,7 +422,18 @@ packages:
       - supports-color
     dev: true
 
-  /@postanu/ui/0.8.1_@postanu+core@0.1.1+vue@3.2.24:
+  /@postanu/types/0.3.1_vue@3.2.24:
+    resolution: {integrity: sha512-RmEidQ/btx8SlhmWYT8IOWEAMG+Dc5lwPWPnD8zb43irLs36ZC07sFXMwrnxDgNz6IpaqJvy+UiHBECvCsKPow==}
+    peerDependencies:
+      vue: '>=3.2.20'
+    peerDependenciesMeta:
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.2.24
+    dev: true
+
+  /@postanu/ui/0.8.1_800f6f85cded1d607fda5a004bc4f3b8:
     resolution: {integrity: sha512-o77+3IufVzZA0ALokxK36TVHSsvYt4ZHPI7nmieqgEF1mqtOC+9xQcjT5M0LjXZ+f1j/Tb6EwiT+IH2NiYCgsg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -446,6 +459,7 @@ packages:
         optional: true
     dependencies:
       '@postanu/core': 0.1.1
+      '@postanu/types': 0.3.1_vue@3.2.24
       vue: 3.2.24
     dev: false
 
