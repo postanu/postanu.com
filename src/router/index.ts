@@ -1,5 +1,6 @@
 import { createMemoryHistory, createWebHistory } from 'vue-router'
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 type LazyComponent = Promise<typeof import('*.vue')>
 
 let isClient = typeof window !== 'undefined'
