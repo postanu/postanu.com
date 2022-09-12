@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@postanu/ui": "^0.8.1",
-    "vue": "^3.2.30"
+    "vue": "^3.2.39"
   },
   "devDependencies": {
-    "@postanu/browserslist-config": "^0.1.0",
+    "@postanu/browserslist-config": "^0.2.0",
     "@postanu/core": "^0.1.1",
     "@postanu/eslint-config": "^3.12.0",
     "@postanu/stylelint-config": "^0.5.0",
@@ -24,9 +24,9 @@
     "@size-limit/preset-app": "^7.0.8",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
-    "@vitejs/plugin-vue": "^2.2.0",
-    "@vue/compiler-sfc": "^3.2.30",
-    "@vue/server-renderer": "^3.2.30",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/compiler-sfc": "^3.2.39",
+    "@vue/server-renderer": "^3.2.39",
     "@vueuse/head": "^0.7.5",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.23.1",
@@ -48,8 +48,8 @@
     "stylelint": "^14.4.0",
     "stylus": "^0.56.0",
     "typescript": "^4.8.3",
-    "vite": "^2.8.0",
-    "vite-ssg": "^0.17.10",
+    "vite": "^3.1.0",
+    "vite-ssg": "^0.20.2",
     "vue-router": "^4.0.8",
     "vue-tsc": "^0.40.13"
   }

@@ -13,5 +13,8 @@ export default defineConfig({
 			// https://github.com/antfu/vite-ssg/blob/d14b50983a909f4b42d209c4b207a05ee4fefcd9/src/node/build.ts#L19
 			return routes.filter(i => !i.includes(':') && !i.includes('*'))
 		}
+	},
+	ssr: {
+		noExternal: ['@postanu/ui']
 	}
 })
