@@ -14,6 +14,9 @@ export default defineConfig({
 			return routes.filter(i => !i.includes(':') && !i.includes('*'))
 		}
 	},
+	optimizeDeps: {
+		include: ['@postanu/core']
+	},
 	ssr: {
 		noExternal: ['@postanu/ui']
 	}

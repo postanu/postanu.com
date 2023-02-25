@@ -1,11 +1,10 @@
 import '@postanu/ui/style'
-import './styles/base.styl'
-import './styles/ui.styl'
+import './styles/base.sass'
+import './styles/ui.sass'
 
 import {
 	PHeading,
 	PButton,
-	PIcon,
 	PLogo
 } from '@postanu/ui'
 import { ViteSSG } from 'vite-ssg'
@@ -19,7 +18,6 @@ export const createApp = ViteSSG(
 	({ app }) => {
 		app.component('PHeading', PHeading)
 		app.component('PButton', PButton)
-		app.component('PIcon', PIcon)
 		app.component('PLogo', PLogo)
 	},
 	{

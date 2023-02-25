@@ -8,9 +8,13 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "noImplicitAny": false,
+    "isolatedModules": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "types": ["vite/client"]
   },
   "include": [
@@ -18,5 +22,5 @@
     "./src/**/*.vue",
     "./src/**/*.ts",
     "./env.d.ts"
-  ],
+  ]
 }

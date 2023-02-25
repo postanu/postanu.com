@@ -1,7 +1,10 @@
 <template lang="pug">
 .index-view
 	section.section
-		p-heading(tag="h1" hero) Sharing your opinion <br>and talking about your life <br>should be easy
+		p-heading(
+			tag="h1"
+			hero
+			) Sharing your opinion <br>and talking about your life <br>should be easy
 	hr.hr
 	section.section#ig
 		a.ig__link(
@@ -9,13 +12,15 @@
 			target="_blank"
 			rel="noopener"
 		)
-			p-heading(tag="h2" hero)
-				| IG
+			p-heading(
+				tag="h2"
+				hero
+			) IG
 				br
 				span.ig__muted @postanuapp
 </template>
 
-<style lang="stylus">
+<style lang="sass">
 .ig__muted
 	color: var(--p-color-white-04)
 

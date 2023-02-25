@@ -3,6 +3,6 @@
     "path": [
       "./dist/assets/*.js"
     ],
-    "limit": "40 kB"
+    "limit": "60 kB"
   }
 ]

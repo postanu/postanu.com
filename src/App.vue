@@ -2,30 +2,30 @@
 header.header
 	router-link(to="/")
 		p-logo.header__logo
-	p-button(
-		v-if="auth"
-		icon="facebook"
+	p-button.header__button(
+		disabled
 		@click="login"
-	) Log in via
-	.header__coming(v-else) Coming soon
+	) Coming soon
 main
 	router-view.view
 hr.hr
 footer.footer
-	.footer__rune
-		p-icon(icon="edaks")
 	p
-		p-heading(tag="span" headline) Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
+		p-heading(
+			tag="span"
+			headline
+		) Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
 		br
 		br
-		p-heading(tag="span" headline) Copyright © 2021 Postanu LLC
+		p-heading(
+			tag="span"
+			headline
+		) Copyright © 2021 Postanu LLC
 </template>
 
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
-
-import IndexView from './views/IndexView.vue'
 
 const route = useRoute()
 
@@ -36,17 +36,18 @@ function login (): void {
 }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .view
 	display: flex
 	flex-direction: column
 	justify-content: center
-	padding: 20px 20px 0px 20px
+	padding: 20px 20px 0
 	text-align: center
 
 .header
 	position: fixed
 	display: flex
+	align-items: center
 	justify-content: space-between
 	width: 100%
 
@@ -54,9 +55,9 @@ function login (): void {
 	display: inline-block
 	padding: 20px
 
-.header__coming
+.header__button
 	padding: 20px
-	text-transform: lowercase
+	border-radius: 35px
 
 .footer
 	display: flex
