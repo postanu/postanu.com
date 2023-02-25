@@ -17,7 +17,7 @@ footer.footer
 		p-heading(
 			tag="span"
 			headline
-		) Copyright © 2021 Postanu LLC
+		) Copyright © 2023 Postanu LLC
 </template>
 
 <script lang="ts" setup>
