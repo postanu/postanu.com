@@ -43,7 +43,7 @@ specifiers:
   vue-tsc: ^1.2.0
 
 dependencies:
-  '@postanu/ui': github.com/postanu/ui/125589908b8fb962c1c2ff8e9a1e490462888a7b_4ntdshkkoqmx3gse2onwvnscme
+  '@postanu/ui': github.com/postanu/ui/506c649121503797a402d62878f2b03178b73456_4ntdshkkoqmx3gse2onwvnscme
   vue: 3.2.47
 
 devDependencies:
@@ -4803,9 +4803,9 @@ packages:
     name: '@postanu/core'
     version: 0.3.0
 
-  github.com/postanu/ui/125589908b8fb962c1c2ff8e9a1e490462888a7b_4ntdshkkoqmx3gse2onwvnscme:
-    resolution: {tarball: https://codeload.github.com/postanu/ui/tar.gz/125589908b8fb962c1c2ff8e9a1e490462888a7b}
-    id: github.com/postanu/ui/125589908b8fb962c1c2ff8e9a1e490462888a7b
+  github.com/postanu/ui/506c649121503797a402d62878f2b03178b73456_4ntdshkkoqmx3gse2onwvnscme:
+    resolution: {tarball: https://codeload.github.com/postanu/ui/tar.gz/506c649121503797a402d62878f2b03178b73456}
+    id: github.com/postanu/ui/506c649121503797a402d62878f2b03178b73456
     name: '@postanu/ui'
     version: 0.9.4
     peerDependencies:
