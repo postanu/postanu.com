@@ -1,16 +1,16 @@
-import '@postanu/ui/style'
 import './styles/base.sass'
 import './styles/ui.sass'
+import '@postanu/ui/styles'
 
 import {
-	PHeading,
 	PButton,
+	PHeading,
 	PLogo
 } from '@postanu/ui'
 import { ViteSSG } from 'vite-ssg'
 
-import { routes, history } from './router'
 import App from './App.vue'
+import { history, routes } from './router'
 
 export const createApp = ViteSSG(
 	App,
