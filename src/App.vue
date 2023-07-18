@@ -3,24 +3,23 @@ header.header
 	router-link(to="/")
 		p-logo.header__logo
 	p-button.header__button(disabled) Coming soon
-main
+main.main
 	router-view.view
-hr.hr
-footer.footer
+hr.hr(v-if="showFooter")
+footer.footer(v-if="showFooter")
 	p
-		p-heading(
-			tag="span"
-			headline
-		) Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
+		p-headline(tag="span") Neither&nbsp;autoposting nor&nbsp;marketing nor&nbsp;SMM <br>nor&nbsp;platform nor&nbsp;service nor&nbsp;promotion nor&nbsp;sales
 		br
 		br
-		p-heading(
-			tag="span"
-			headline
-		) Copyright © 2023 Postanu LLC
+		p-headline(tag="span") Copyright © 2023 Postanu LLC
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+let route = useRoute()
+let showFooter = computed(() => route.meta.footer !== false)
 </script>
 
 <style lang="sass">

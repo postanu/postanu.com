@@ -1,10 +1,13 @@
 import './styles/base.sass'
-import './styles/ui.sass'
 import '@postanu/ui/styles'
 
 import {
 	PButton,
+	PButtonText,
+	PDot,
 	PHeading,
+	PHeadline,
+	PInput,
 	PLogo
 } from '@postanu/ui'
 import { ViteSSG } from 'vite-ssg'
@@ -16,8 +19,12 @@ export const createApp = ViteSSG(
 	App,
 	{ history, routes },
 	({ app }) => {
-		app.component('PHeading', PHeading)
 		app.component('PButton', PButton)
+		app.component('PButtonText', PButtonText)
+		app.component('PDot', PDot)
+		app.component('PHeading', PHeading)
+		app.component('PHeadline', PHeadline)
+		app.component('PInput', PInput)
 		app.component('PLogo', PLogo)
 	},
 	{

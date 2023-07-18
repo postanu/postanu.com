@@ -14,6 +14,14 @@ export let routes = [
 			import('../views/IndexView.vue')
 	},
 	{
+		path: '/login',
+		component: (): LazyComponent =>
+			import('../views/LoginView.vue'),
+		meta: {
+			footer: false
+		}
+	},
+	{
 		path: '/500',
 		component: (): LazyComponent =>
 			import('../views/Error500View.vue')

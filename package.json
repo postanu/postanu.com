@@ -12,7 +12,7 @@
     "test": "vue-tsc --noEmit && stylelint './src/**/*.{vue,sass}' && eslint ./src && pnpm build && size-limit"
   },
   "dependencies": {
-    "@postanu/ui": "^0.10.0",
+    "@postanu/ui": "^0.10.6",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -22,15 +22,16 @@
     "@postanu/stylelint-config": "^0.7.7",
     "@postanu/types": "^0.10.1",
     "@size-limit/preset-app": "^8.2.6",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "@vitejs/plugin-vue": "^4.2.3",
-    "@volar/vue-language-plugin-pug": "^1.6.5",
     "@vue/compiler-sfc": "^3.3.4",
+    "@vue/language-plugin-pug": "^1.8.5",
     "@vue/server-renderer": "^3.3.4",
     "@vueuse/head": "^1.1.26",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.44.0",
+    "eslint": "^8.45.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^16.0.1",
@@ -38,21 +39,22 @@
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-security": "^1.7.1",
-    "eslint-plugin-unicorn": "^47.0.0",
+    "eslint-plugin-unicorn": "^48.0.0",
     "eslint-plugin-vue": "^9.15.1",
     "eslint-plugin-vue-pug": "^0.6.0",
     "nano-staged": "^0.8.0",
-    "postcss": "^8.4.25",
+    "postcss": "^8.4.26",
+    "postcss-100vh-fix": "^1.0.2",
     "pug": "^3.0.2",
     "sass": "^1.63.6",
     "simple-git-hooks": "^2.8.1",
     "size-limit": "^8.2.6",
     "stylelint": "^15.10.1",
     "typescript": "^5.1.6",
-    "vite": "^4.4.2",
+    "vite": "^4.4.4",
     "vite-ssg": "^0.23.0",
     "vue-eslint-parser": "^9.3.1",
     "vue-router": "^4.2.4",
-    "vue-tsc": "^1.8.4"
+    "vue-tsc": "^1.8.5"
   }
 }
