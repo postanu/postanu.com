@@ -20,29 +20,28 @@
 			p-button-text.button(
 				type="submit"
 				variant="target"
-				:disabled="loading"
+				:disabled="state === 'loading'"
 			) Enter
 		.state
 			p-dot(:state="state")
-			.error(v-if="error")
-				h3.error-message Something went wrong
-				p.p.p-caption.error-description
+			.state-message(v-if="state ==='error'")
+				h3.state-message__title Something went wrong
+				p.p.p-caption.state-message__description
 					| Don't worry, it happens, there is no success without&nbsp;mistakes.
 					| Try to repeat what you were&nbsp;doing.
+			.state-message(v-if="state ==='success'")
+				h3.state-message__title Login link was sent
+				p.p.p-caption.state-message__description
+					| Check your inbox, there should be a letter with a&nbsp;magic&nbsp;link.
+					| Just click on it to log in.
 </template>
 
 <script lang="ts" setup>
 import { PInput } from '@postanu/ui'
-import { computed, onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-const loading = ref(false)
-const error = ref(false)
-const state = computed(
-	() => error.value
-		? 'error'
-		: (loading.value ? 'loading' : false)
-)
+const state = ref<'error' | 'loading' | 'success' | false>(false)
 
 const email = ref('')
 const input = ref<null | typeof PInput>(null)
@@ -54,8 +53,7 @@ onMounted(() => {
 })
 
 async function send (): Promise<void> {
-	loading.value = true
-	error.value = false
+	state.value = 'loading'
 	input.value?.blur()
 
 	try {
@@ -68,16 +66,16 @@ async function send (): Promise<void> {
 				email: email.value
 			})
 		})
-		if (!response.ok) {
+		if (response.ok) {
+			setTimeout(() => {
+				state.value = 'success'
+			}, 600)
+		} else {
 			throw new Error('Response was not ok.')
 		}
-		setTimeout(() => {
-			loading.value = false
-		}, 600)
 	} catch {
 		setTimeout(() => {
-			error.value = true
-			loading.value = false
+			state.value = 'error'
 		}, 600)
 	}
 }
@@ -138,9 +136,9 @@ async function send (): Promise<void> {
 	height: 150px
 	padding-bottom: 50px
 
-.error-message
+.state-message__title
 	padding-bottom: 10px
 
-.error-description
+.state-message__description
 	color: var(--p-color-white-05)
 </style>
