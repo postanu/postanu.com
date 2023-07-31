@@ -1,9 +1,14 @@
 import type { LocationQueryValue } from 'vue-router'
 
+interface RequestOptions {
+	credentials?: RequestCredentials
+}
+
 async function request <Response> (
 	method: 'GET' | 'POST',
 	url: string,
-	body: Record<string, null | string | undefined>
+	body: Record<string, null | string | undefined>,
+	options?: RequestOptions
 ): Promise<Response> {
 	let requestInit: RequestInit = { method }
 	if (method === 'GET') {
@@ -22,6 +27,9 @@ async function request <Response> (
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(body)
+		}
+		if (options?.credentials) {
+			requestInit.credentials = options.credentials
 		}
 	}
 
@@ -50,5 +58,10 @@ export async function authVerifyCode (
 	url: string,
 	code: string
 ): Promise<{ redirect_url: string }> {
-	return request<{ redirect_url: string }>('GET', url, { code })
+	return request<{ redirect_url: string }>(
+		'GET',
+		url,
+		{ code },
+		{ credentials: 'include' }
+	)
 }
