@@ -36,7 +36,9 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: registry.digitalocean.com/postanu/web:${{ github.sha }}
+          tags: |
+            registry.digitalocean.com/postanu/web:${{ github.sha }}
+            registry.digitalocean.com/postanu/web:latest
           cache-from: type=local,src=/tmp/.buildx-web-cache
           cache-to: type=local,dest=/tmp/.buildx-web-cache-new,mode=max
 
