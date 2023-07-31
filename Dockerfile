@@ -3,12 +3,12 @@ FROM node:20 as node
 RUN corepack enable
 RUN corepack prepare pnpm@latest --activate
 
-ENV NODE_ENV=production
-
 COPY . ./postanu
 WORKDIR /postanu
 
 RUN pnpm install --frozen-lockfile --ignore-scripts
+
+ENV NODE_ENV=production
 RUN pnpm build
 
 
