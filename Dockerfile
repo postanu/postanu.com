@@ -8,6 +8,7 @@ ENV NODE_ENV=production
 COPY . ./postanu
 WORKDIR /postanu
 
+RUN pnpm install --frozen-lockfile --ignore-scripts
 RUN pnpm build
 
 
