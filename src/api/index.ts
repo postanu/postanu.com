@@ -18,6 +18,8 @@ async function request <Response> (
 	if (method === 'POST') {
 		requestInit = {
 			...requestInit,
+			// temporary allow cross origin cookies
+			credentials: 'include',
 			headers: {
 				'Content-Type': 'application/json'
 			},
