@@ -5,7 +5,11 @@ async function request <Response> (
 	url: string,
 	body: Record<string, null | string | undefined>
 ): Promise<Response> {
-	let requestInit: RequestInit = { method }
+	let requestInit: RequestInit = {
+		method,
+		// temporary allow cross origin cookies
+		credentials: 'include'
+	}
 	if (method === 'GET') {
 		for (let [key, value] of Object.entries(body)) {
 			if (value === undefined || value === null) {
@@ -18,8 +22,6 @@ async function request <Response> (
 	if (method === 'POST') {
 		requestInit = {
 			...requestInit,
-			// temporary allow cross origin cookies
-			credentials: 'include',
 			headers: {
 				'Content-Type': 'application/json'
 			},
